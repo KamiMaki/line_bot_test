@@ -214,7 +214,7 @@ def handle_message(event):
             "weight": "bold",
             "size": "sm",
             "align": "center",
-            "wrap": true,
+            "wrap": "true",
             "contents": []
           }
         ]
@@ -280,7 +280,7 @@ def handle_message(event):
                 "color": "#0D2A45FF",
                 "gravity": "bottom",
                 "margin": "sm",
-                "wrap": true,
+                "wrap": "true",
                 "contents": []
               },
               {
