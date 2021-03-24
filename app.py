@@ -34,323 +34,163 @@ def callback():
 # 處理訊息
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
-    message = {
-  "type": "carousel",
-  "contents": [
-    {
-      "type": "bubble",
-      "direction": "ltr",
-      "header": {
-        "type": "box",
-        "layout": "vertical",
-        "contents": [
-          {
-            "type": "text",
-            "text": "路博邁5G股票基金",
-            "weight": "bold",
-            "size": "lg",
-            "color": "#123A5F",
-            "align": "center",
-            "contents": []
-          },
-          {
-            "type": "text",
-            "text": "(本基金有相當比重投資於非投資等級之高風險債券且配息來源可能為本金)",
-            "weight": "bold",
-            "size": "sm",
-            "align": "center",
-            "wrap": true,
-            "contents": []
-          }
-        ]
+    
+    flex_message = FlexSendMessage('card',{
+  "type": "bubble",
+  "direction": "ltr",
+  "header": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "text",
+        "text": "路博邁5G股票基金",
+        "weight": "bold",
+        "size": "lg",
+        "color": "#123A5F",
+        "align": "center",
+        "contents": []
       },
-      "hero": {
-        "type": "image",
-        "url": "https://i.imgur.com/zR4DXfB.png",
-        "align": "start",
-        "size": "full",
-        "aspectRatio": "1.51:1",
-        "aspectMode": "fit",
-        "backgroundColor": "#FFFFFFFF",
-        "action": {
-          "type": "uri",
-          "label": "5G",
-          "uri": "https://www.nb.com/zh-tw/tw/products/site/taiwan-5g-equity"
-        }
-      },
-      "body": {
-        "type": "box",
-        "layout": "vertical",
-        "contents": [
-          {
-            "type": "separator",
-            "margin": "sm"
-          },
-          {
-            "type": "box",
-            "layout": "vertical",
-            "contents": [
-              {
-                "type": "text",
-                "text": "基金優勢",
-                "weight": "bold",
-                "size": "lg",
-                "color": "#EA6715FF",
-                "margin": "sm",
-                "contents": []
-              },
-              {
-                "type": "text",
-                "text": "在5G的創新趨勢中，依據未來營運能見度與可預測性，找尋策略性高成長的投資機會，以獲取最佳長期增值利益。",
-                "weight": "bold",
-                "size": "sm",
-                "color": "#000000FF",
-                "margin": "sm",
-                "wrap": true,
-                "contents": []
-              }
-            ]
-          },
-          {
-            "type": "separator",
-            "margin": "md"
-          },
-          {
-            "type": "box",
-            "layout": "vertical",
-            "contents": [
-              {
-                "type": "text",
-                "text": "淨值($)",
-                "color": "#0D2A45FF",
-                "gravity": "bottom",
-                "margin": "sm",
-                "wrap": true,
-                "contents": []
-              },
-              {
-                "type": "text",
-                "text": "每日變動($)",
-                "color": "#0D2A45FF",
-                "contents": []
-              },
-              {
-                "type": "text",
-                "text": "日漲跌幅(%)",
-                "color": "#0D2A45FF",
-                "contents": []
-              }
-            ]
-          },
-          {
-            "type": "box",
-            "layout": "vertical",
-            "position": "absolute",
-            "offsetTop": "122px",
-            "offsetStart": "220px",
-            "contents": [
-              {
-                "type": "text",
-                "text": "$14.46",
-                "contents": []
-              },
-              {
-                "type": "text",
-                "text": "$0.14",
-                "contents": []
-              },
-              {
-                "type": "text",
-                "text": "0.98%",
-                "color": "#FF0000FF",
-                "contents": []
-              }
-            ]
-          }
-        ]
-      },
-      "footer": {
-        "type": "box",
-        "layout": "horizontal",
-        "contents": [
-          {
-            "type": "button",
-            "action": {
-              "type": "uri",
-              "label": "查看更多基金資訊",
-              "uri": "https://www.nb.com/zh-tw/tw/products/site/taiwan-5g-equity"
-            }
-          }
-        ]
-      },
-      "styles": {
-        "header": {
-          "separatorColor": "#FFFFFFFF"
-        },
-        "body": {
-          "backgroundColor": "#FFFFFFFF"
-        }
+      {
+        "type": "text",
+        "text": "(本基金有相當比重投資於非投資等級之高風險債券且配息來源可能為本金)",
+        "weight": "bold",
+        "size": "sm",
+        "align": "center",
+        "wrap": true,
+        "contents": []
       }
-    },
-    {
-      "type": "bubble",
-      "direction": "ltr",
-      "header": {
-        "type": "box",
-        "layout": "vertical",
-        "contents": [
-          {
-            "type": "text",
-            "text": "路博邁5G股票基金",
-            "weight": "bold",
-            "size": "lg",
-            "color": "#123A5F",
-            "align": "center",
-            "contents": []
-          },
-          {
-            "type": "text",
-            "text": "(本基金有相當比重投資於非投資等級之高風險債券且配息來源可能為本金)",
-            "weight": "bold",
-            "size": "sm",
-            "align": "center",
-            "wrap": true,
-            "contents": []
-          }
-        ]
-      },
-      "hero": {
-        "type": "image",
-        "url": "https://i.imgur.com/zR4DXfB.png",
-        "align": "start",
-        "size": "full",
-        "aspectRatio": "1.51:1",
-        "aspectMode": "fit",
-        "backgroundColor": "#FFFFFFFF",
-        "action": {
-          "type": "uri",
-          "label": "5G",
-          "uri": "https://www.nb.com/zh-tw/tw/products/site/taiwan-5g-equity"
-        }
-      },
-      "body": {
-        "type": "box",
-        "layout": "vertical",
-        "contents": [
-          {
-            "type": "separator",
-            "margin": "sm"
-          },
-          {
-            "type": "box",
-            "layout": "vertical",
-            "contents": [
-              {
-                "type": "text",
-                "text": "基金優勢",
-                "weight": "bold",
-                "size": "lg",
-                "color": "#EA6715FF",
-                "margin": "sm",
-                "contents": []
-              },
-              {
-                "type": "text",
-                "text": "在5G的創新趨勢中，依據未來營運能見度與可預測性，找尋策略性高成長的投資機會，以獲取最佳長期增值利益。",
-                "weight": "bold",
-                "size": "sm",
-                "color": "#000000FF",
-                "margin": "sm",
-                "wrap": true,
-                "contents": []
-              }
-            ]
-          },
-          {
-            "type": "separator",
-            "margin": "md"
-          },
-          {
-            "type": "box",
-            "layout": "vertical",
-            "contents": [
-              {
-                "type": "text",
-                "text": "淨值($)",
-                "color": "#0D2A45FF",
-                "gravity": "bottom",
-                "margin": "sm",
-                "wrap": true,
-                "contents": []
-              },
-              {
-                "type": "text",
-                "text": "每日變動($)",
-                "color": "#0D2A45FF",
-                "contents": []
-              },
-              {
-                "type": "text",
-                "text": "日漲跌幅(%)",
-                "color": "#0D2A45FF",
-                "contents": []
-              }
-            ]
-          },
-          {
-            "type": "box",
-            "layout": "vertical",
-            "position": "absolute",
-            "offsetTop": "122px",
-            "offsetStart": "220px",
-            "contents": [
-              {
-                "type": "text",
-                "text": "$14.46",
-                "contents": []
-              },
-              {
-                "type": "text",
-                "text": "$0.14",
-                "contents": []
-              },
-              {
-                "type": "text",
-                "text": "0.98%",
-                "color": "#FF0000FF",
-                "contents": []
-              }
-            ]
-          }
-        ]
-      },
-      "footer": {
-        "type": "box",
-        "layout": "horizontal",
-        "contents": [
-          {
-            "type": "button",
-            "action": {
-              "type": "uri",
-              "label": "查看更多基金資訊",
-              "uri": "https://www.nb.com/zh-tw/tw/products/site/taiwan-5g-equity"
-            }
-          }
-        ]
-      },
-      "styles": {
-        "header": {
-          "separatorColor": "#FFFFFFFF"
-        },
-        "body": {
-          "backgroundColor": "#FFFFFFFF"
-        }
-      }
+    ]
+  },
+  "hero": {
+    "type": "image",
+    "url": "https://i.imgur.com/zR4DXfB.png",
+    "align": "start",
+    "size": "full",
+    "aspectRatio": "1.51:1",
+    "aspectMode": "fit",
+    "backgroundColor": "#FFFFFFFF",
+    "action": {
+      "type": "uri",
+      "label": "5G",
+      "uri": "https://www.nb.com/zh-tw/tw/products/site/taiwan-5g-equity"
     }
-  ]
-}
-    json_object = json.dumps(message)
-    line_bot_api.reply_message(event.reply_token, FlexSendMessage('card',json_object))
+  },
+  "body": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "separator",
+        "margin": "sm"
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "基金優勢",
+            "weight": "bold",
+            "size": "lg",
+            "color": "#EA6715FF",
+            "margin": "sm",
+            "contents": []
+          },
+          {
+            "type": "text",
+            "text": "在5G的創新趨勢中，依據未來營運能見度與可預測性，找尋策略性高成長的投資機會，以獲取最佳長期增值利益。",
+            "weight": "bold",
+            "size": "sm",
+            "color": "#000000FF",
+            "margin": "sm",
+            "wrap": true,
+            "contents": []
+          }
+        ]
+      },
+      {
+        "type": "separator",
+        "margin": "md"
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "淨值($)",
+            "color": "#0D2A45FF",
+            "gravity": "bottom",
+            "margin": "sm",
+            "wrap": true,
+            "contents": []
+          },
+          {
+            "type": "text",
+            "text": "每日變動($)",
+            "color": "#0D2A45FF",
+            "contents": []
+          },
+          {
+            "type": "text",
+            "text": "日漲跌幅(%)",
+            "color": "#0D2A45FF",
+            "contents": []
+          }
+        ]
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "position": "absolute",
+        "offsetTop": "122px",
+        "offsetStart": "220px",
+        "contents": [
+          {
+            "type": "text",
+            "text": "$14.46",
+            "contents": []
+          },
+          {
+            "type": "text",
+            "text": "$0.14",
+            "contents": []
+          },
+          {
+            "type": "text",
+            "text": "0.98%",
+            "color": "#FF0000FF",
+            "contents": []
+          }
+        ]
+      }
+    ]
+  },
+  "footer": {
+    "type": "box",
+    "layout": "horizontal",
+    "contents": [
+      {
+        "type": "button",
+        "action": {
+          "type": "uri",
+          "label": "查看更多基金資訊",
+          "uri": "https://www.nb.com/zh-tw/tw/products/site/taiwan-5g-equity"
+        }
+      }
+    ]
+  },
+  "styles": {
+    "header": {
+      "separatorColor": "#FFFFFFFF"
+    },
+    "body": {
+      "backgroundColor": "#FFFFFFFF"
+    }
+  }
+})
+    line_bot_api.reply_message(event.reply_token,flex_message )
 
 import os
 if __name__ == "__main__":
