@@ -59,7 +59,7 @@ def handle_message(event):
             "weight": "bold",
             "size": "sm",
             "align": "center",
-            "wrap": "true",
+            "wrap": true,
             "contents": []
           }
         ]
@@ -106,7 +106,7 @@ def handle_message(event):
                 "size": "sm",
                 "color": "#000000FF",
                 "margin": "sm",
-                "wrap": "true",
+                "wrap": true,
                 "contents": []
               }
             ]
@@ -125,7 +125,7 @@ def handle_message(event):
                 "color": "#0D2A45FF",
                 "gravity": "bottom",
                 "margin": "sm",
-                "wrap": "true",
+                "wrap": true,
                 "contents": []
               },
               {
@@ -214,7 +214,7 @@ def handle_message(event):
             "weight": "bold",
             "size": "sm",
             "align": "center",
-            "wrap": "true",
+            "wrap": true,
             "contents": []
           }
         ]
@@ -261,7 +261,7 @@ def handle_message(event):
                 "size": "sm",
                 "color": "#000000FF",
                 "margin": "sm",
-                "wrap": "true",
+                "wrap": true,
                 "contents": []
               }
             ]
@@ -280,7 +280,7 @@ def handle_message(event):
                 "color": "#0D2A45FF",
                 "gravity": "bottom",
                 "margin": "sm",
-                "wrap": "true",
+                "wrap": true,
                 "contents": []
               },
               {
@@ -349,7 +349,8 @@ def handle_message(event):
     }
   ]
 }
-    line_bot_api.reply_message(event.reply_token, FlexSendMessage('card',message))
+    json_object = json.dumps(message)
+    line_bot_api.reply_message(event.reply_token, FlexSendMessage('card',json_object))
 
 import os
 if __name__ == "__main__":
