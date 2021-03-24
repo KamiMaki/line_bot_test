@@ -192,7 +192,8 @@ def handle_message(event):
 })
     if event.message.text == '圖卡':
         line_bot_api.reply_message(event.reply_token,flex_message )
-    line_bot_api.reply_message(event.reply_token,'你的UID：'+str(event.source.user_id))
+    else:
+        line_bot_api.reply_message(event.reply_token,'你的UID：'+event.source.user_id)
     
 import os
 if __name__ == "__main__":
