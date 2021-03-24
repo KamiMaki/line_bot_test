@@ -1,4 +1,5 @@
 from flask import Flask, request, abort
+import json
 
 from linebot import (
     LineBotApi, WebhookHandler
@@ -348,7 +349,7 @@ def handle_message(event):
     }
   ]
 }
-    line_bot_api.reply_message(event.reply_token, message)
+    line_bot_api.reply_message(event.reply_token, FlexSendMessage('card',message))
 
 import os
 if __name__ == "__main__":
