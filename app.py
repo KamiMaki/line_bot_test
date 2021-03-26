@@ -44,30 +44,33 @@ def handle_message(event):
     "contents": [
       {
         "type": "text",
-        "text": "路博邁ESG新興市場債券基金",
+        "text": "路博邁5G股票基金",
         "weight": "bold",
         "size": "lg",
         "color": "#123A5F",
         "align": "center",
+        "margin": "xxl",
         "contents": []
       },
       {
-        "type": "text",
-        "text": "(本基金有相當比重投資於非投資等級之高風險債券且配息來源可能為本金)",
-        "weight": "bold",
-        "size": "sm",
-        "align": "center",
-        "wrap": True,
-        "contents": []
+        "type": "spacer",
+        "size": "xxl"
       }
     ]
   },
   "hero": {
     "type": "image",
-    "url": "https://i.imgur.com/k8WABcP.png",
+    "url": "https://i.imgur.com/zR4DXfB.png",
+    "align": "start",
     "size": "full",
     "aspectRatio": "1.51:1",
-    "aspectMode": "fit"
+    "aspectMode": "fit",
+    "backgroundColor": "#FFFFFFFF",
+    "action": {
+      "type": "uri",
+      "label": "5G",
+      "uri": "https://www.nb.com/zh-tw/tw/products/site/taiwan-5g-equity"
+    }
   },
   "body": {
     "type": "box",
@@ -92,13 +95,12 @@ def handle_message(event):
           },
           {
             "type": "text",
-            "text": "透過投資於美元計價的全球新興市場債券，掌握並參與新興市場持續強勁的成長動能投資機會",
+            "text": "在5G的創新趨勢中，依據未來營運能見度與可預測性，找尋策略性高成長的投資機會，以獲取最佳長期增值利益。",
             "weight": "bold",
             "size": "sm",
             "color": "#000000FF",
-            "align": "start",
             "margin": "sm",
-            "wrap": True,
+            "wrap": true,
             "contents": []
           }
         ]
@@ -121,6 +123,8 @@ def handle_message(event):
                 "text": "淨值($)",
                 "weight": "bold",
                 "color": "#0D2A45FF",
+                "gravity": "bottom",
+                "wrap": true,
                 "contents": []
               },
               {
@@ -146,17 +150,17 @@ def handle_message(event):
             "contents": [
               {
                 "type": "text",
-                "text": "$9.84",
+                "text": "$14.46",
                 "contents": []
               },
               {
                 "type": "text",
-                "text": "$0.01",
+                "text": "$0.14",
                 "contents": []
               },
               {
                 "type": "text",
-                "text": "0.10%",
+                "text": "0.98%",
                 "color": "#FF0000FF",
                 "contents": []
               }
@@ -175,10 +179,18 @@ def handle_message(event):
         "action": {
           "type": "uri",
           "label": "查看更多基金資訊",
-          "uri": "https://pse.is/3ds9nx"
+          "uri": "https://www.nb.com/zh-tw/tw/products/site/taiwan-5g-equity"
         }
       }
     ]
+  },
+  "styles": {
+    "header": {
+      "separatorColor": "#FFFFFFFF"
+    },
+    "body": {
+      "backgroundColor": "#FFFFFFFF"
+    }
   }
 })
     if event.message.text == '圖卡':
