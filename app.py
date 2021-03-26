@@ -51,10 +51,6 @@ def handle_message(event):
         "align": "center",
         "margin": "xxl",
         "contents": []
-      },
-      {
-        "type": "spacer",
-        "size": "xxl"
       }
     ]
   },
