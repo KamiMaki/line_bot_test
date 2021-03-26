@@ -52,7 +52,12 @@ def handle_message(event):
             "size": "lg",
             "color": "#123A5F",
             "align": "center",
+            "margin": "xxl",
             "contents": []
+          },
+          {
+            "type": "spacer",
+            "size": "xxl"
           }
         ]
       },
@@ -109,53 +114,60 @@ def handle_message(event):
           },
           {
             "type": "box",
-            "layout": "vertical",
+            "layout": "horizontal",
+            "margin": "sm",
             "contents": [
               {
-                "type": "text",
-                "text": "淨值($)",
-                "color": "#0D2A45FF",
-                "gravity": "bottom",
-                "margin": "sm",
-                "wrap": True,
-                "contents": []
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "淨值($)",
+                    "weight": "bold",
+                    "color": "#0D2A45FF",
+                    "gravity": "bottom",
+                    "wrap": True,
+                    "contents": []
+                  },
+                  {
+                    "type": "text",
+                    "text": "每日變動($)",
+                    "weight": "bold",
+                    "color": "#0D2A45FF",
+                    "contents": []
+                  },
+                  {
+                    "type": "text",
+                    "text": "日漲跌幅(%)",
+                    "weight": "bold",
+                    "color": "#0D2A45FF",
+                    "contents": []
+                  }
+                ]
               },
               {
-                "type": "text",
-                "text": "每日變動($)",
-                "color": "#0D2A45FF",
-                "contents": []
-              },
-              {
-                "type": "text",
-                "text": "日漲跌幅(%)",
-                "color": "#0D2A45FF",
-                "contents": []
-              }
-            ]
-          },
-          {
-            "type": "box",
-            "layout": "vertical",
-            "position": "absolute",
-            "offsetTop": "122px",
-            "offsetStart": "220px",
-            "contents": [
-              {
-                "type": "text",
-                "text": "$14.46",
-                "contents": []
-              },
-              {
-                "type": "text",
-                "text": "$0.14",
-                "contents": []
-              },
-              {
-                "type": "text",
-                "text": "0.98%",
-                "color": "#FF0000FF",
-                "contents": []
+                "type": "box",
+                "layout": "vertical",
+                "offsetStart": "70px",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "$14.46",
+                    "contents": []
+                  },
+                  {
+                    "type": "text",
+                    "text": "$0.14",
+                    "contents": []
+                  },
+                  {
+                    "type": "text",
+                    "text": "0.98%",
+                    "color": "#FF0000FF",
+                    "contents": []
+                  }
+                ]
               }
             ]
           }
@@ -193,7 +205,7 @@ def handle_message(event):
         "contents": [
           {
             "type": "text",
-            "text": "路博邁5G股票基金",
+            "text": "路博邁ESG新興市場債券基金",
             "weight": "bold",
             "size": "lg",
             "color": "#123A5F",
@@ -213,17 +225,10 @@ def handle_message(event):
       },
       "hero": {
         "type": "image",
-        "url": "https://i.imgur.com/zR4DXfB.png",
-        "align": "start",
+        "url": "https://i.imgur.com/k8WABcP.png",
         "size": "full",
         "aspectRatio": "1.51:1",
-        "aspectMode": "fit",
-        "backgroundColor": "#FFFFFFFF",
-        "action": {
-          "type": "uri",
-          "label": "5G",
-          "uri": "https://www.nb.com/zh-tw/tw/products/site/taiwan-5g-equity"
-        }
+        "aspectMode": "fit"
       },
       "body": {
         "type": "box",
@@ -248,10 +253,11 @@ def handle_message(event):
               },
               {
                 "type": "text",
-                "text": "在5G的創新趨勢中，依據未來營運能見度與可預測性，找尋策略性高成長的投資機會，以獲取最佳長期增值利益。",
+                "text": "透過投資於美元計價的全球新興市場債券，掌握並參與新興市場持續強勁的成長動能投資機會",
                 "weight": "bold",
                 "size": "sm",
                 "color": "#000000FF",
+                "align": "start",
                 "margin": "sm",
                 "wrap": True,
                 "contents": []
@@ -264,53 +270,58 @@ def handle_message(event):
           },
           {
             "type": "box",
-            "layout": "vertical",
+            "layout": "horizontal",
+            "margin": "sm",
             "contents": [
               {
-                "type": "text",
-                "text": "淨值($)",
-                "color": "#0D2A45FF",
-                "gravity": "bottom",
-                "margin": "sm",
-                "wrap": True,
-                "contents": []
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "淨值($)",
+                    "weight": "bold",
+                    "color": "#0D2A45FF",
+                    "contents": []
+                  },
+                  {
+                    "type": "text",
+                    "text": "每日變動($)",
+                    "weight": "bold",
+                    "color": "#0D2A45FF",
+                    "contents": []
+                  },
+                  {
+                    "type": "text",
+                    "text": "日漲跌幅(%)",
+                    "weight": "bold",
+                    "color": "#0D2A45FF",
+                    "contents": []
+                  }
+                ]
               },
               {
-                "type": "text",
-                "text": "每日變動($)",
-                "color": "#0D2A45FF",
-                "contents": []
-              },
-              {
-                "type": "text",
-                "text": "日漲跌幅(%)",
-                "color": "#0D2A45FF",
-                "contents": []
-              }
-            ]
-          },
-          {
-            "type": "box",
-            "layout": "vertical",
-            "position": "absolute",
-            "offsetTop": "122px",
-            "offsetStart": "220px",
-            "contents": [
-              {
-                "type": "text",
-                "text": "$14.46",
-                "contents": []
-              },
-              {
-                "type": "text",
-                "text": "$0.14",
-                "contents": []
-              },
-              {
-                "type": "text",
-                "text": "0.98%",
-                "color": "#FF0000FF",
-                "contents": []
+                "type": "box",
+                "layout": "vertical",
+                "offsetStart": "70px",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "$9.84",
+                    "contents": []
+                  },
+                  {
+                    "type": "text",
+                    "text": "$0.01",
+                    "contents": []
+                  },
+                  {
+                    "type": "text",
+                    "text": "0.10%",
+                    "color": "#FF0000FF",
+                    "contents": []
+                  }
+                ]
               }
             ]
           }
@@ -325,18 +336,10 @@ def handle_message(event):
             "action": {
               "type": "uri",
               "label": "查看更多基金資訊",
-              "uri": "https://www.nb.com/zh-tw/tw/products/site/taiwan-5g-equity"
+              "uri": "https://www.nb.com/zh-tw/tw/products/site/esg-emerging-market-debt-hard-currency-securities-investment-trust-fund"
             }
           }
         ]
-      },
-      "styles": {
-        "header": {
-          "separatorColor": "#FFFFFFFF"
-        },
-        "body": {
-          "backgroundColor": "#FFFFFFFF"
-        }
       }
     }
   ]
