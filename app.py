@@ -36,313 +36,150 @@ def callback():
 def handle_message(event):
     
     flex_message = FlexSendMessage('card',{
-  "type": "carousel",
-  "contents": [
-    {
-      "type": "bubble",
-      "direction": "ltr",
-      "header": {
-        "type": "box",
-        "layout": "vertical",
-        "contents": [
-          {
-            "type": "text",
-            "text": "路博邁5G股票基金",
-            "weight": "bold",
-            "size": "lg",
-            "color": "#123A5F",
-            "align": "center",
-            "margin": "xxl",
-            "contents": []
-          },
-          {
-            "type": "spacer",
-            "size": "xxl"
-          }
-        ]
+  "type": "bubble",
+  "direction": "ltr",
+  "header": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "text",
+        "text": "路博邁ESG新興市場債券基金",
+        "weight": "bold",
+        "size": "lg",
+        "color": "#123A5F",
+        "align": "center",
+        "contents": []
       },
-      "hero": {
-        "type": "image",
-        "url": "https://i.imgur.com/zR4DXfB.png",
-        "align": "start",
-        "size": "full",
-        "aspectRatio": "1.51:1",
-        "aspectMode": "fit",
-        "backgroundColor": "#FFFFFFFF",
-        "action": {
-          "type": "uri",
-          "label": "5G",
-          "uri": "https://www.nb.com/zh-tw/tw/products/site/taiwan-5g-equity"
-        }
-      },
-      "body": {
-        "type": "box",
-        "layout": "vertical",
-        "contents": [
-          {
-            "type": "separator",
-            "margin": "sm"
-          },
-          {
-            "type": "box",
-            "layout": "vertical",
-            "contents": [
-              {
-                "type": "text",
-                "text": "基金優勢",
-                "weight": "bold",
-                "size": "lg",
-                "color": "#EA6715FF",
-                "margin": "sm",
-                "contents": []
-              },
-              {
-                "type": "text",
-                "text": "在5G的創新趨勢中，依據未來營運能見度與可預測性，找尋策略性高成長的投資機會，以獲取最佳長期增值利益。",
-                "weight": "bold",
-                "size": "sm",
-                "color": "#000000FF",
-                "margin": "sm",
-                "wrap": True,
-                "contents": []
-              }
-            ]
-          },
-          {
-            "type": "separator",
-            "margin": "md"
-          },
-          {
-            "type": "box",
-            "layout": "horizontal",
-            "margin": "sm",
-            "contents": [
-              {
-                "type": "box",
-                "layout": "vertical",
-                "contents": [
-                  {
-                    "type": "text",
-                    "text": "淨值($)",
-                    "weight": "bold",
-                    "color": "#0D2A45FF",
-                    "gravity": "bottom",
-                    "wrap": True,
-                    "contents": []
-                  },
-                  {
-                    "type": "text",
-                    "text": "每日變動($)",
-                    "weight": "bold",
-                    "color": "#0D2A45FF",
-                    "contents": []
-                  },
-                  {
-                    "type": "text",
-                    "text": "日漲跌幅(%)",
-                    "weight": "bold",
-                    "color": "#0D2A45FF",
-                    "contents": []
-                  }
-                ]
-              },
-              {
-                "type": "box",
-                "layout": "vertical",
-                "offsetStart": "70px",
-                "contents": [
-                  {
-                    "type": "text",
-                    "text": "$14.46",
-                    "contents": []
-                  },
-                  {
-                    "type": "text",
-                    "text": "$0.14",
-                    "contents": []
-                  },
-                  {
-                    "type": "text",
-                    "text": "0.98%",
-                    "color": "#FF0000FF",
-                    "contents": []
-                  }
-                ]
-              }
-            ]
-          }
-        ]
-      },
-      "footer": {
-        "type": "box",
-        "layout": "horizontal",
-        "contents": [
-          {
-            "type": "button",
-            "action": {
-              "type": "uri",
-              "label": "查看更多基金資訊",
-              "uri": "https://www.nb.com/zh-tw/tw/products/site/taiwan-5g-equity"
-            }
-          }
-        ]
-      },
-      "styles": {
-        "header": {
-          "separatorColor": "#FFFFFFFF"
-        },
-        "body": {
-          "backgroundColor": "#FFFFFFFF"
-        }
+      {
+        "type": "text",
+        "text": "(本基金有相當比重投資於非投資等級之高風險債券且配息來源可能為本金)",
+        "weight": "bold",
+        "size": "sm",
+        "align": "center",
+        "wrap": True,
+        "contents": []
       }
-    },
-    {
-      "type": "bubble",
-      "direction": "ltr",
-      "header": {
+    ]
+  },
+  "hero": {
+    "type": "image",
+    "url": "https://i.imgur.com/k8WABcP.png",
+    "size": "full",
+    "aspectRatio": "1.51:1",
+    "aspectMode": "fit"
+  },
+  "body": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "separator",
+        "margin": "sm"
+      },
+      {
         "type": "box",
         "layout": "vertical",
         "contents": [
           {
             "type": "text",
-            "text": "路博邁ESG新興市場債券基金",
+            "text": "基金優勢",
             "weight": "bold",
             "size": "lg",
-            "color": "#123A5F",
-            "align": "center",
+            "color": "#EA6715FF",
+            "margin": "sm",
             "contents": []
           },
           {
             "type": "text",
-            "text": "(本基金有相當比重投資於非投資等級之高風險債券且配息來源可能為本金)",
+            "text": "透過投資於美元計價的全球新興市場債券，掌握並參與新興市場持續強勁的成長動能投資機會",
             "weight": "bold",
             "size": "sm",
-            "align": "center",
+            "color": "#000000FF",
+            "align": "start",
+            "margin": "sm",
             "wrap": True,
             "contents": []
           }
         ]
       },
-      "hero": {
-        "type": "image",
-        "url": "https://i.imgur.com/k8WABcP.png",
-        "size": "full",
-        "aspectRatio": "1.51:1",
-        "aspectMode": "fit"
+      {
+        "type": "separator",
+        "margin": "md"
       },
-      "body": {
+      {
         "type": "box",
-        "layout": "vertical",
+        "layout": "horizontal",
+        "margin": "sm",
         "contents": [
-          {
-            "type": "separator",
-            "margin": "sm"
-          },
           {
             "type": "box",
             "layout": "vertical",
             "contents": [
               {
                 "type": "text",
-                "text": "基金優勢",
+                "text": "淨值($)",
                 "weight": "bold",
-                "size": "lg",
-                "color": "#EA6715FF",
-                "margin": "sm",
+                "color": "#0D2A45FF",
                 "contents": []
               },
               {
                 "type": "text",
-                "text": "透過投資於美元計價的全球新興市場債券，掌握並參與新興市場持續強勁的成長動能投資機會",
+                "text": "每日變動($)",
                 "weight": "bold",
-                "size": "sm",
-                "color": "#000000FF",
-                "align": "start",
-                "margin": "sm",
-                "wrap": True,
+                "color": "#0D2A45FF",
+                "contents": []
+              },
+              {
+                "type": "text",
+                "text": "日漲跌幅(%)",
+                "weight": "bold",
+                "color": "#0D2A45FF",
                 "contents": []
               }
             ]
           },
           {
-            "type": "separator",
-            "margin": "md"
-          },
-          {
             "type": "box",
-            "layout": "horizontal",
-            "margin": "sm",
+            "layout": "vertical",
+            "offsetStart": "70px",
             "contents": [
               {
-                "type": "box",
-                "layout": "vertical",
-                "contents": [
-                  {
-                    "type": "text",
-                    "text": "淨值($)",
-                    "weight": "bold",
-                    "color": "#0D2A45FF",
-                    "contents": []
-                  },
-                  {
-                    "type": "text",
-                    "text": "每日變動($)",
-                    "weight": "bold",
-                    "color": "#0D2A45FF",
-                    "contents": []
-                  },
-                  {
-                    "type": "text",
-                    "text": "日漲跌幅(%)",
-                    "weight": "bold",
-                    "color": "#0D2A45FF",
-                    "contents": []
-                  }
-                ]
+                "type": "text",
+                "text": "$9.84",
+                "contents": []
               },
               {
-                "type": "box",
-                "layout": "vertical",
-                "offsetStart": "70px",
-                "contents": [
-                  {
-                    "type": "text",
-                    "text": "$9.84",
-                    "contents": []
-                  },
-                  {
-                    "type": "text",
-                    "text": "$0.01",
-                    "contents": []
-                  },
-                  {
-                    "type": "text",
-                    "text": "0.10%",
-                    "color": "#FF0000FF",
-                    "contents": []
-                  }
-                ]
+                "type": "text",
+                "text": "$0.01",
+                "contents": []
+              },
+              {
+                "type": "text",
+                "text": "0.10%",
+                "color": "#FF0000FF",
+                "contents": []
               }
             ]
           }
         ]
-      },
-      "footer": {
-        "type": "box",
-        "layout": "horizontal",
-        "contents": [
-          {
-            "type": "button",
-            "action": {
-              "type": "uri",
-              "label": "查看更多基金資訊",
-              "uri": "https://www.nb.com/zh-tw/tw/products/site/esg-emerging-market-debt-hard-currency-securities-investment-trust-fund"
-            }
-          }
-        ]
       }
-    }
-  ]
+    ]
+  },
+  "footer": {
+    "type": "box",
+    "layout": "horizontal",
+    "contents": [
+      {
+        "type": "button",
+        "action": {
+          "type": "uri",
+          "label": "查看更多基金資訊",
+          "uri": "https://pse.is/3ds9nx"
+        }
+      }
+    ]
+  }
 })
     if event.message.text == '圖卡':
         line_bot_api.reply_message(event.reply_token,flex_message )
