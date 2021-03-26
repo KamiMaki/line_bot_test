@@ -47,7 +47,7 @@ def handle_message(event):
         "contents": [
           {
             "type": "text",
-            "text": "路博邁5G股票基金\n\n",
+            "text": "路博邁5G股票基金",
             "weight": "bold",
             "size": "lg",
             "color": "#123A5F",
@@ -60,7 +60,9 @@ def handle_message(event):
       "hero": {
         "type": "image",
         "url": "https://i.imgur.com/zR4DXfB.png",
-        "align": "start",
+        "margin": "xxl",
+        "align": "center",
+        "gravity": "bottom",
         "size": "full",
         "aspectRatio": "1.51:1",
         "aspectMode": "fit",
@@ -69,15 +71,17 @@ def handle_message(event):
           "type": "uri",
           "label": "5G",
           "uri": "https://www.nb.com/zh-tw/tw/products/site/taiwan-5g-equity"
-        }
+        },
+        "offsetTop": "15px"
       },
       "body": {
         "type": "box",
         "layout": "vertical",
+        "margin": "xxl",
         "contents": [
           {
             "type": "separator",
-            "margin": "sm"
+            "margin": "xxl"
           },
           {
             "type": "box",
