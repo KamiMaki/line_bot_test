@@ -53,15 +53,6 @@ def handle_message(event):
             "color": "#123A5F",
             "align": "center",
             "contents": []
-          },
-          {
-            "type": "text",
-            "text": "",
-            "weight": "bold",
-            "size": "sm",
-            "align": "center",
-            "wrap": True,
-            "contents": []
           }
         ]
       },
