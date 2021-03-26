@@ -100,7 +100,7 @@ def handle_message(event):
             "size": "sm",
             "color": "#000000FF",
             "margin": "sm",
-            "wrap": true,
+            "wrap": True,
             "contents": []
           }
         ]
@@ -124,7 +124,7 @@ def handle_message(event):
                 "weight": "bold",
                 "color": "#0D2A45FF",
                 "gravity": "bottom",
-                "wrap": true,
+                "wrap": True,
                 "contents": []
               },
               {
