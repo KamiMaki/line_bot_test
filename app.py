@@ -347,9 +347,8 @@ def handle_message(event):
     if event.message.text == '圖卡':
         line_bot_api.reply_message(event.reply_token,flex_message )
     else:
-        print(event.source.user_id)
-        line_bot_api.reply_message(event.reply_token,TextSendMessage(event.source.user_id))
-    
+        line_bot_api.reply_message(event.reply_token,
+  TextSendMessage(text='Quick reply',quick_reply=QuickReply(items=[QuickReplyButton(action=MessageAction(label="label1", text="text1")), QuickReplyButton(action=MessageAction(label="label2", text="text2")), QuickReplyButton(action=MessageAction(label="label2", text="text2"))])))
 import os
 if __name__ == "__main__":
     port = int(os.environ.get('PORT', 5000))
