@@ -72,7 +72,7 @@ def handle_message(event):
           "label": "5G",
           "uri": "https://www.nb.com/zh-tw/tw/products/site/taiwan-5g-equity"
         },
-        "offsetTop": "15px"
+        "offsetTop": "17px"
       },
       "body": {
         "type": "box",
