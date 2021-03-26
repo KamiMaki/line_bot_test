@@ -348,7 +348,7 @@ def handle_message(event):
         line_bot_api.reply_message(event.reply_token,flex_message )
     else:
         line_bot_api.reply_message(event.reply_token,
-  TextSendMessage(quick_reply=QuickReply(items=[QuickReplyButton(action=MessageAction(label="label1", text="text1")), QuickReplyButton(action=MessageAction(label="label2", text="text2")), QuickReplyButton(action=MessageAction(label="label3", text="text3")),QuickReplyButton(action=MessageAction(label="label4", text="text4")),QuickReplyButton(action=MessageAction(label="label5", text="text5")),QuickReplyButton(action=MessageAction(label="label6", text="text6")),QuickReplyButton(action=MessageAction(label="label7", text="text7")),QuickReplyButton(action=MessageAction(label="label8", text="text8")),QuickReplyButton(action=MessageAction(label="label9", text="text9")),QuickReplyButton(action=MessageAction(label="label10", text="text10"))])))
+  TextSendMessage(text='可透過下方類別了解更多：',quick_reply=QuickReply(items=[QuickReplyButton(action=MessageAction(label="label1", text="text1")), QuickReplyButton(action=MessageAction(label="label2", text="text2")), QuickReplyButton(action=MessageAction(label="label3", text="text3")),QuickReplyButton(action=MessageAction(label="label4", text="text4")),QuickReplyButton(action=MessageAction(label="label5", text="text5")),QuickReplyButton(action=MessageAction(label="label6", text="text6")),QuickReplyButton(action=MessageAction(label="label7", text="text7")),QuickReplyButton(action=MessageAction(label="label8", text="text8")),QuickReplyButton(action=MessageAction(label="label9", text="text9")),QuickReplyButton(action=MessageAction(label="label10", text="text10"))])))
 import os
 if __name__ == "__main__":
     port = int(os.environ.get('PORT', 5000))
