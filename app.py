@@ -44,6 +44,7 @@ def handle_message(event):
       "header": {
         "type": "box",
         "layout": "vertical",
+        "height": "100px",
         "contents": [
           {
             "type": "text",
@@ -52,7 +53,6 @@ def handle_message(event):
             "size": "lg",
             "color": "#123A5F",
             "align": "center",
-            "margin": "xxl",
             "contents": []
           }
         ]
@@ -60,7 +60,6 @@ def handle_message(event):
       "hero": {
         "type": "image",
         "url": "https://i.imgur.com/zR4DXfB.png",
-        "margin": "xxl",
         "align": "center",
         "gravity": "bottom",
         "size": "full",
@@ -71,17 +70,14 @@ def handle_message(event):
           "type": "uri",
           "label": "5G",
           "uri": "https://www.nb.com/zh-tw/tw/products/site/taiwan-5g-equity"
-        },
-        "offsetTop": "17px"
+        }
       },
       "body": {
         "type": "box",
         "layout": "vertical",
-        "margin": "xxl",
         "contents": [
           {
-            "type": "separator",
-            "margin": "xxl"
+            "type": "separator"
           },
           {
             "type": "box",
@@ -202,6 +198,7 @@ def handle_message(event):
       "header": {
         "type": "box",
         "layout": "vertical",
+        "height": "100px",
         "contents": [
           {
             "type": "text",
@@ -235,8 +232,7 @@ def handle_message(event):
         "layout": "vertical",
         "contents": [
           {
-            "type": "separator",
-            "margin": "sm"
+            "type": "separator"
           },
           {
             "type": "box",
