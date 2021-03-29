@@ -35,6 +35,10 @@ def callback():
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
     
+    
+    
+    
+    
     flex_message = FlexSendMessage('card',{
   "type": "carousel",
   "contents": [
@@ -341,9 +345,43 @@ def handle_message(event):
   ]
 })
     
+    news = {
+  "type": "template",
+  "altText": "this is a carousel template",
+  "template": {
+    "type": "carousel",
+    "columns": [
+      {
+        "title": "聯準會言出必行？",
+        "text": "文字",
+        "actions": [
+          {
+            "type": "uri",
+            "label": "觀看文章",
+            "uri": "https://www.nb.com/zh-tw/tw/insights/cio-weekly-perspectives-is-the-feds-word-its-bond"
+          }
+        ]
+      },
+      {
+        "title": "標題",
+        "text": "文字",
+        "actions": [
+          {
+            "type": "message",
+            "label": "動作 1",
+            "text": "動作 1"
+          }
+        ]
+      }
+    ]
+  }
+}
+    
     quick_reply = TextSendMessage(text='可透過下方類別了解更多：',quick_reply=QuickReply(items=[QuickReplyButton(action=MessageAction(label="label1", text="text1")), QuickReplyButton(action=MessageAction(label="label2", text="text2")), QuickReplyButton(action=MessageAction(label="label3", text="text3")),QuickReplyButton(action=MessageAction(label="label4", text="text4")),QuickReplyButton(action=MessageAction(label="label5", text="text5")),QuickReplyButton(action=MessageAction(label="label6", text="text6")),QuickReplyButton(action=MessageAction(label="label7", text="text7")),QuickReplyButton(action=MessageAction(label="label8", text="text8")),QuickReplyButton(action=MessageAction(label="label9", text="text9")),QuickReplyButton(action=MessageAction(label="label10", text="text10"))]))
     if event.message.text == '圖卡':
         line_bot_api.reply_message(event.reply_token,flex_message )
+    elif event.message.text == '觀點':
+        line_bot_api.reply_message(event.reply_token,news)
     else:
         # line_bot_api.reply_message(event.reply_token,flex_message)
         line_bot_api.reply_message(event.reply_token,[flex_message,quick_reply])
