@@ -376,7 +376,7 @@ def handle_message(event):
     if event.message.text == '圖卡':
         line_bot_api.reply_message(event.reply_token,flex_message )
     elif event.message.text == '觀點':
-        line_bot_api.reply_message(event.reply_token,TemplateSendMessage(news))
+        line_bot_api.reply_message(event.reply_token,news)
     else:
         # line_bot_api.reply_message(event.reply_token,flex_message)
         line_bot_api.reply_message(event.reply_token,[flex_message,quick_reply])
