@@ -179,16 +179,11 @@ def handle_message(event):
         "contents": [
           {
             "type": "button",
-            "action": [{
+            "action": {
               "type": "uri",
               "label": "查看更多基金資訊",
               "uri": "https://www.nb.com/zh-tw/tw/products/site/taiwan-5g-equity"
-            },
-            {
-            "type": "message",
-            "label": "觀看文章",
-            "text": "動作 1"
-          } ]
+            } 
           }
         ]
       },
